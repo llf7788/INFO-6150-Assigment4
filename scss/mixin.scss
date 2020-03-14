@@ -1,0 +1,8 @@
+// a simple mixin to set what you like in width value.
+@mixin widthset($radius){
+    width: $radius;
+}
+@mixin style1 {
+    box-shadow:#000 0 0 10px 0;
+    padding: var(--dimension3);
+}

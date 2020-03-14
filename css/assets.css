@@ -1,0 +1,73 @@
+.color1 {
+  color: #0fa; }
+
+.color2 {
+  color: #F0FFFF; }
+
+/*set two types of color using #code to optimize CSS loading speed*/
+button:hover {
+  cursor: pointer; }
+
+/* Mouse can change to a pointer on every button*/
+.button1 {
+  bottom: auto;
+  background-color: #0fa; }
+
+.button2 {
+  background-color: #0fa;
+  color: #F0FFFF; }
+
+.button3 {
+  background-color: #F0FFFF; }
+
+.button4 {
+  background-color: #0fa;
+  color: #F0FFFF;
+  font-size: large;
+  margin-top: 70px; }
+
+.button5 {
+  background-color: #0fa;
+  color: #F0FFFF;
+  font-size: larger; }
+
+.button6 {
+  margin-top: 15px;
+  background-color: #0fa;
+  color: #F0FFFF;
+  font-size: large; }
+
+/* Set the styles for form function including input, selection and textarea*/
+.input1 {
+  float: left;
+  width: 360px;
+  height: 30px;
+  border: 1px solid #000; }
+
+.input2 {
+  float: right;
+  width: 360px;
+  height: 30px;
+  border: 1px solid #000; }
+
+.input3 {
+  margin-top: 15px;
+  float: left;
+  width: 360px;
+  height: 30px;
+  border: 1px solid #000; }
+
+.select1 {
+  margin-top: 15px;
+  float: right;
+  width: 360px;
+  height: 30px;
+  border: 1px solid #000;
+  background-color: white; }
+
+.textarea1 {
+  clear: both;
+  margin-top: 15px;
+  float: left;
+  border: 1px solid #000;
+  width: 800px; }

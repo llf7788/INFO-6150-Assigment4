@@ -1,0 +1,15 @@
+{
+  "name": "assignment4",
+  "version": "1.0.0",
+  "description": "Build an HTML document for the attached web page design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass scss/ -o css/"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

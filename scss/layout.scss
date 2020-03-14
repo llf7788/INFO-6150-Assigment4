@@ -1,0 +1,259 @@
+    @import "mixin";
+    $dimension: 300px;
+    $dimension2: 350px;
+    //variables examples.
+    :root{
+        --dimension3:20px
+    }
+    .container{
+        position: static;
+        float: right;
+        width: 1000px;
+        height: 100px;
+        padding: 20px;
+    }
+    .div1 { /*Use many different div layout to set the page look similar to the attached page*/
+    float:right;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    margin-top : 40px;
+    }
+    
+    .div2 {
+    float:right;
+    margin-top:40px;
+    margin-right:180px;
+    }
+    //Add inheritance.
+    %div-shared{
+        float: left;
+        margin-left: $dimension;
+    }
+    .div3 {
+    @extend %div-shared;
+    width:500px;
+    margin-top:$dimension / 2;
+    }
+    
+    .div4 {
+    margin:auto;
+    }
+    
+    .div5 {
+    @extend %div-shared;
+    }
+    
+    .div6 {
+    float:right;
+    width:$dimension;
+    margin-right:$dimension;
+    }
+    
+    .div7 {
+    clear:both;
+    margin-left: $dimension;
+    }
+    
+    .div8 {
+    clear:both;
+    text-align:center;
+    }
+    
+    .div9 {
+    float:left;
+    width:$dimension;
+    height:$dimension2;
+    margin-left:$dimension;
+    @include style1;
+    }
+    
+    .div10 {
+    float:right;
+    width:$dimension2;
+    margin-right:250px;
+    margin-top:70px;
+    @include style1;
+    }
+    
+    .div11 {
+    clear:both;
+    float:left;
+    width:$dimension2;
+    margin-left:$dimension;
+    margin-top:70px;
+    @include style1;
+    }
+    
+    .div12 {
+    float:right;
+    width:$dimension;
+    height:$dimension2;
+    margin-right:250px;
+    background-color:#0fa;
+    padding: var(--dimension3);
+    }
+    
+    .div13 {
+    float:left;
+    width:$dimension;
+    height:$dimension2;
+    margin-left:$dimension;
+    box-shadow:#000 0 0 10px 0;
+    margin-top:70px;
+    padding: var(--dimension3);
+    }
+    
+    .div14 {
+    text-align:center;
+    width:600px;
+    margin:0 auto;
+    }
+    
+    .div15 {
+    display:inline;
+    margin:0 auto;
+    }
+    
+    .div16 {
+    width:80%;
+    margin:0 auto;
+    }
+    
+    
+    
+    .div19 {
+    text-align:center;
+    width:800px;
+    margin:0 auto;
+    }
+    
+    .div20 {
+    margin-top:100px;
+    float:left;
+    width:77px;
+    height:33px;
+    background-color:#0fa;
+    }
+    
+    .div21 {
+    clear:both;
+    }
+    //nested selector
+    .div22 {
+    clear:both;
+    float:right;
+        .p7{
+            color:#0fa;
+            display:inline;
+            font-size:small;
+            margin:30px;
+        }
+        .p8{
+            display:inline;
+            font-size:small;
+            margin:30px;
+        }
+    }
+        /* Set the list-style-type to none to remove black points*/
+    .ul1 {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    }
+    
+    .ul2 {
+    list-style-type:none;
+    text-align:center;
+    }
+    
+    .li1 {
+    display:inline;
+    margin:30px;
+    }
+    /* When hover on the list, its background color will change to blue.*/
+    .li1:hover {
+    cursor:pointer;
+    background-color:blue;
+    }
+    /* When click the list, its color will become red*/
+    .li::selection {
+    color:red;
+    }
+    
+    .li2 {
+    display:inline;
+    margin:40px;
+    }
+    /* The function below aims to change the font-size, font-color, font-family and some other properties*/
+
+    //Add a function with a while loop.
+    @function scale-above($value, $base, $ratio: 1.618) {
+        @while $value < $base {
+        $value: $value * $ratio;
+        }
+        @return $value;
+    }
+    $base-color: rgb(90, 223, 194);
+        @for $i from 1 through 3{
+            .item#{$i}:hover {
+            background-color:lighten($base-color, $i * 5%);
+        }
+    }
+    
+    .h1 {
+    font-family:pmingliu;
+    font-size:scale-above(11px,30px);
+    }
+    
+    .h2 {
+    font-family:Arial;
+    font-size:scale-above(11px,30px);
+    }
+    
+    
+    .h3 {
+    font-family:monospace;
+    font-weight:700;
+    }
+    .p1 {
+    font-size:xx-small;
+    color:#0fa;
+    }
+    
+    .p2 {
+    font-size:larger;
+    font-weight:700;
+    }
+    
+    .p3 {
+    font-size:xx-small;
+    }
+    
+    .p4 {
+    font-size:xx-small;
+    color:#F0FFFF;
+    }
+    
+    .p5 {
+    font-size:xx-small;
+    float:left;
+    }
+    
+    .p6 {
+    font-size:x-small;
+    float:right;
+    width:var(dimension);
+    }
+    
+    
+    // Add some combinators.
+    footer p{
+        color: rgba($color: #050000, $alpha: 1.0)
+    }
+    div > h6{
+        font-family: Cambria;
+    }
+    div h1:hover{
+        background-color: white;
+    }

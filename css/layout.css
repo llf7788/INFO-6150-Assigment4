@@ -1,0 +1,212 @@
+:root {
+  --dimension3:20px
+    ; }
+
+.container {
+  position: static;
+  float: right;
+  width: 1000px;
+  height: 100px;
+  padding: 20px; }
+
+.div1 {
+  /*Use many different div layout to set the page look similar to the attached page*/
+  float: right;
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  margin-top: 40px; }
+
+.div2 {
+  float: right;
+  margin-top: 40px;
+  margin-right: 180px; }
+
+.div3, .div5 {
+  float: left;
+  margin-left: 300px; }
+
+.div3 {
+  width: 500px;
+  margin-top: 150px; }
+
+.div4 {
+  margin: auto; }
+
+.div6 {
+  float: right;
+  width: 300px;
+  margin-right: 300px; }
+
+.div7 {
+  clear: both;
+  margin-left: 300px; }
+
+.div8 {
+  clear: both;
+  text-align: center; }
+
+.div9 {
+  float: left;
+  width: 300px;
+  height: 350px;
+  margin-left: 300px;
+  box-shadow: #000 0 0 10px 0;
+  padding: var(--dimension3); }
+
+.div10 {
+  float: right;
+  width: 350px;
+  margin-right: 250px;
+  margin-top: 70px;
+  box-shadow: #000 0 0 10px 0;
+  padding: var(--dimension3); }
+
+.div11 {
+  clear: both;
+  float: left;
+  width: 350px;
+  margin-left: 300px;
+  margin-top: 70px;
+  box-shadow: #000 0 0 10px 0;
+  padding: var(--dimension3); }
+
+.div12 {
+  float: right;
+  width: 300px;
+  height: 350px;
+  margin-right: 250px;
+  background-color: #0fa;
+  padding: var(--dimension3); }
+
+.div13 {
+  float: left;
+  width: 300px;
+  height: 350px;
+  margin-left: 300px;
+  box-shadow: #000 0 0 10px 0;
+  margin-top: 70px;
+  padding: var(--dimension3); }
+
+.div14 {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto; }
+
+.div15 {
+  display: inline;
+  margin: 0 auto; }
+
+.div16 {
+  width: 80%;
+  margin: 0 auto; }
+
+.div19 {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto; }
+
+.div20 {
+  margin-top: 100px;
+  float: left;
+  width: 77px;
+  height: 33px;
+  background-color: #0fa; }
+
+.div21 {
+  clear: both; }
+
+.div22 {
+  clear: both;
+  float: right; }
+  .div22 .p7 {
+    color: #0fa;
+    display: inline;
+    font-size: small;
+    margin: 30px; }
+  .div22 .p8 {
+    display: inline;
+    font-size: small;
+    margin: 30px; }
+
+/* Set the list-style-type to none to remove black points*/
+.ul1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.ul2 {
+  list-style-type: none;
+  text-align: center; }
+
+.li1 {
+  display: inline;
+  margin: 30px; }
+
+/* When hover on the list, its background color will change to blue.*/
+.li1:hover {
+  cursor: pointer;
+  background-color: blue; }
+
+/* When click the list, its color will become red*/
+.li::selection {
+  color: red; }
+
+.li2 {
+  display: inline;
+  margin: 40px; }
+
+/* The function below aims to change the font-size, font-color, font-family and some other properties*/
+.item1:hover {
+  background-color: #6fe3ca; }
+
+.item2:hover {
+  background-color: #85e7d2; }
+
+.item3:hover {
+  background-color: #9aebda; }
+
+.h1 {
+  font-family: pmingliu;
+  font-size: 46.59381px; }
+
+.h2 {
+  font-family: Arial;
+  font-size: 46.59381px; }
+
+.h3 {
+  font-family: monospace;
+  font-weight: 700; }
+
+.p1 {
+  font-size: xx-small;
+  color: #0fa; }
+
+.p2 {
+  font-size: larger;
+  font-weight: 700; }
+
+.p3 {
+  font-size: xx-small; }
+
+.p4 {
+  font-size: xx-small;
+  color: #F0FFFF; }
+
+.p5 {
+  font-size: xx-small;
+  float: left; }
+
+.p6 {
+  font-size: x-small;
+  float: right;
+  width: var(dimension); }
+
+footer p {
+  color: #050000; }
+
+div > h6 {
+  font-family: Cambria; }
+
+div h1:hover {
+  background-color: white; }

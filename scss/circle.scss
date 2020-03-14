@@ -1,0 +1,82 @@
+.shadow_circle {
+    float: left;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.05);
+    overflow: hidden;
+    text-align: center;
+}/* shadow */
+.progress_circle1 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    border-top: 7px solid #1de9b6;
+    border-right: 7px solid #1de9b6; /* top + right = 50% */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -82px;
+    transform : rotate(45deg); /*rotate 45 degree*/
+    
+}
+.progress_circle2 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    border-top: 7px solid #1de9b6;
+    border-right: 7px solid #1de9b6;
+    border-bottom: 7px solid #1de9b6;  /*top + right + bottom = 75%*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -82px;
+    transform : rotate(45deg);
+}
+.progress_circle3 {
+    width: 150px;
+    height: 150px;
+    border: 7px solid transparent;
+    border-radius: 50%;
+    border-top: 7px solid #1de9b6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -82px;
+    margin-top: -82px;
+    transform : rotate(45deg); 
+}
+
+.text_circle { /* Whose size + border should be equal to progress_circles' size */
+    width: 148px;
+    height: 148px;
+    border: 2px solid #a7ffeb;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+        /* Use font-family to change the font*/
+.number {
+    font-family: 'Patua One', cursive;
+    font-size: 40px;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
